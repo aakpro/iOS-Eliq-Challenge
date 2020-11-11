@@ -1,0 +1,1012 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2901F4CF255C45B7002254AC /* FetchCurrencyDataUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F4CE255C45B7002254AC /* FetchCurrencyDataUseCase.swift */; };
+		2901F4D4255C4AE5002254AC /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F4D3255C4AE5002254AC /* Currency.swift */; };
+		2901F4D9255C4B2E002254AC /* CurrencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F4D8255C4B2E002254AC /* CurrencyList.swift */; };
+		2901F4E9255C4F25002254AC /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F4E8255C4F24002254AC /* Cancellable.swift */; };
+		2901F4EE255C4F71002254AC /* CurrencyListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F4ED255C4F71002254AC /* CurrencyListRepository.swift */; };
+		2901F4F4255C5020002254AC /* DefaultCurrencyListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F4F3255C5020002254AC /* DefaultCurrencyListRepository.swift */; };
+		2901F4FA255C5278002254AC /* ApiEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F4F9255C5278002254AC /* ApiEndpoints.swift */; };
+		2901F505255C5435002254AC /* RepositoryTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F504255C5435002254AC /* RepositoryTask.swift */; };
+		2901F50E255C56A1002254AC /* CurrencyList+ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F50D255C56A1002254AC /* CurrencyList+ex.swift */; };
+		2901F51F255C574E002254AC /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F51E255C574E002254AC /* NetworkTests.swift */; };
+		2901F524255C69C0002254AC /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2901F523255C69C0002254AC /* Observable.swift */; };
+		2920619125590CE900BFCDCF /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2920619025590CE900BFCDCF /* AppDIContainer.swift */; };
+		2920619A2559150B00BFCDCF /* MainSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292061992559150B00BFCDCF /* MainSceneDIContainer.swift */; };
+		292061A72559966200BFCDCF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292061A62559966200BFCDCF /* MainViewModel.swift */; };
+		292061B6255996AE00BFCDCF /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292061B5255996AE00BFCDCF /* StoryboardInstantiable.swift */; };
+		29C4D80B25581733004F7F81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4D80A25581733004F7F81 /* AppDelegate.swift */; };
+		29C4D80F25581733004F7F81 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4D80E25581733004F7F81 /* MainViewController.swift */; };
+		29C4D81225581733004F7F81 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C4D81025581733004F7F81 /* MainViewController.storyboard */; };
+		29C4D81425581736004F7F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29C4D81325581736004F7F81 /* Assets.xcassets */; };
+		29C4D81725581736004F7F81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29C4D81525581736004F7F81 /* LaunchScreen.storyboard */; };
+		29C4D82225581737004F7F81 /* AppConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4D82125581737004F7F81 /* AppConfigurationTests.swift */; };
+		29C4D82D25581737004F7F81 /* iOS_Eliq_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C4D82C25581737004F7F81 /* iOS_Eliq_ChallengeUITests.swift */; };
+		29E3DF592558386B00A16E7D /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DF582558386B00A16E7D /* DataTransferService.swift */; };
+		29E3DF612558389900A16E7D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DF602558389900A16E7D /* Endpoint.swift */; };
+		29E3DF66255838B700A16E7D /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DF65255838B700A16E7D /* NetworkConfig.swift */; };
+		29E3DF6B255838DA00A16E7D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DF6A255838DA00A16E7D /* NetworkService.swift */; };
+		29E3DF712558392D00A16E7D /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DF702558392D00A16E7D /* ConnectionError.swift */; };
+		29E3DF79255839C000A16E7D /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DF78255839C000A16E7D /* AppAppearance.swift */; };
+		29E3DF7E25583A4F00A16E7D /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E3DF7D25583A4F00A16E7D /* AppConfigurations.swift */; };
+		4F2D7D6679AE39417BB0C4AE /* Pods_iOS_Eliq_Challenge_iOS_Eliq_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9A8E0D8B15BA4CA9CFAA31 /* Pods_iOS_Eliq_Challenge_iOS_Eliq_ChallengeUITests.framework */; };
+		B71421E48373628A7AE771D5 /* Pods_iOS_Eliq_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEF4533F58E9B8294B471D1 /* Pods_iOS_Eliq_ChallengeTests.framework */; };
+		F08A27577307EEE7D070C22B /* Pods_iOS_Eliq_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB7E87D65476EF05F590CE7 /* Pods_iOS_Eliq_Challenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		29C4D81E25581737004F7F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29C4D7FF25581733004F7F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C4D80625581733004F7F81;
+			remoteInfo = "iOS-Eliq-Challenge";
+		};
+		29C4D82925581737004F7F81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29C4D7FF25581733004F7F81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29C4D80625581733004F7F81;
+			remoteInfo = "iOS-Eliq-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AA2969FA2FAE9BD4F71C848 /* Pods-iOS-Eliq-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Eliq-ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-iOS-Eliq-ChallengeTests/Pods-iOS-Eliq-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		2901F4CE255C45B7002254AC /* FetchCurrencyDataUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCurrencyDataUseCase.swift; sourceTree = "<group>"; };
+		2901F4D3255C4AE5002254AC /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2901F4D8255C4B2E002254AC /* CurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyList.swift; sourceTree = "<group>"; };
+		2901F4E8255C4F24002254AC /* Cancellable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		2901F4ED255C4F71002254AC /* CurrencyListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListRepository.swift; sourceTree = "<group>"; };
+		2901F4F3255C5020002254AC /* DefaultCurrencyListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCurrencyListRepository.swift; sourceTree = "<group>"; };
+		2901F4F9255C5278002254AC /* ApiEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoints.swift; sourceTree = "<group>"; };
+		2901F504255C5435002254AC /* RepositoryTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTask.swift; sourceTree = "<group>"; };
+		2901F50D255C56A1002254AC /* CurrencyList+ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CurrencyList+ex.swift"; sourceTree = "<group>"; };
+		2901F51E255C574E002254AC /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		2901F523255C69C0002254AC /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		2920619025590CE900BFCDCF /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		292061992559150B00BFCDCF /* MainSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneDIContainer.swift; sourceTree = "<group>"; };
+		292061A62559966200BFCDCF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		292061B5255996AE00BFCDCF /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		29C4D80725581733004F7F81 /* iOS-Eliq-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Eliq-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C4D80A25581733004F7F81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		29C4D80E25581733004F7F81 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		29C4D81125581733004F7F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainViewController.storyboard; sourceTree = "<group>"; };
+		29C4D81325581736004F7F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		29C4D81625581736004F7F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		29C4D81825581736004F7F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C4D81D25581737004F7F81 /* iOS-Eliq-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Eliq-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C4D82125581737004F7F81 /* AppConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationTests.swift; sourceTree = "<group>"; };
+		29C4D82325581737004F7F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29C4D82825581737004F7F81 /* iOS-Eliq-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Eliq-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29C4D82C25581737004F7F81 /* iOS_Eliq_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Eliq_ChallengeUITests.swift; sourceTree = "<group>"; };
+		29C4D82E25581737004F7F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E3DF582558386B00A16E7D /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		29E3DF602558389900A16E7D /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		29E3DF65255838B700A16E7D /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		29E3DF6A255838DA00A16E7D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		29E3DF702558392D00A16E7D /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		29E3DF78255839C000A16E7D /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		29E3DF7D25583A4F00A16E7D /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		5BD08F0A01309F640ED9640C /* Pods-iOS-Eliq-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Eliq-ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Eliq-ChallengeTests/Pods-iOS-Eliq-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EEF4533F58E9B8294B471D1 /* Pods_iOS_Eliq_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Eliq_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66CD9969D9303C50E1BDA4D7 /* Pods-iOS-Eliq-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Eliq-Challenge.release.xcconfig"; path = "Target Support Files/Pods-iOS-Eliq-Challenge/Pods-iOS-Eliq-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		8A9A8E0D8B15BA4CA9CFAA31 /* Pods_iOS_Eliq_Challenge_iOS_Eliq_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Eliq_Challenge_iOS_Eliq_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB7E87D65476EF05F590CE7 /* Pods_iOS_Eliq_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Eliq_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE0106D29BB7BB2DF08828F /* Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B76116675A86122D91422464 /* Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FCD99ACEC86817A322CA81F2 /* Pods-iOS-Eliq-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Eliq-Challenge.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Eliq-Challenge/Pods-iOS-Eliq-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29C4D80425581733004F7F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08A27577307EEE7D070C22B /* Pods_iOS_Eliq_Challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C4D81A25581737004F7F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71421E48373628A7AE771D5 /* Pods_iOS_Eliq_ChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C4D82525581737004F7F81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2D7D6679AE39417BB0C4AE /* Pods_iOS_Eliq_Challenge_iOS_Eliq_ChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2901F4F2255C5007002254AC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2901F503255C5427002254AC /* Utility */,
+				2901F4F3255C5020002254AC /* DefaultCurrencyListRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		2901F4F8255C526B002254AC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2901F50C255C568E002254AC /* DataMapping */,
+				2901F4F9255C5278002254AC /* ApiEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2901F503255C5427002254AC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2901F504255C5435002254AC /* RepositoryTask.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2901F50C255C568E002254AC /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				2901F50D255C56A1002254AC /* CurrencyList+ex.swift */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		2920618F25590CD700BFCDCF /* DIContainers */ = {
+			isa = PBXGroup;
+			children = (
+				2920619025590CE900BFCDCF /* AppDIContainer.swift */,
+				292061992559150B00BFCDCF /* MainSceneDIContainer.swift */,
+			);
+			path = DIContainers;
+			sourceTree = "<group>";
+		};
+		292061AE2559966700BFCDCF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				292061A62559966200BFCDCF /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		292061AF2559967300BFCDCF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				29C4D80E25581733004F7F81 /* MainViewController.swift */,
+				29C4D81025581733004F7F81 /* MainViewController.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		292061B32559969A00BFCDCF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				292061B4255996A400BFCDCF /* Protocols */,
+				2901F523255C69C0002254AC /* Observable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		292061B4255996A400BFCDCF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				292061B5255996AE00BFCDCF /* StoryboardInstantiable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		292061C62559A4D100BFCDCF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2901F4D3255C4AE5002254AC /* Currency.swift */,
+				2901F4D8255C4B2E002254AC /* CurrencyList.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		292061C72559A4D800BFCDCF /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+				2901F4CE255C45B7002254AC /* FetchCurrencyDataUseCase.swift */,
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
+		292061C82559A4E000BFCDCF /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				2901F4ED255C4F71002254AC /* CurrencyListRepository.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		29C4D7FE25581733004F7F81 = {
+			isa = PBXGroup;
+			children = (
+				29C4D80925581733004F7F81 /* iOS-Eliq-Challenge */,
+				29C4D82025581737004F7F81 /* iOS-Eliq-ChallengeTests */,
+				29C4D82B25581737004F7F81 /* iOS-Eliq-ChallengeUITests */,
+				29C4D80825581733004F7F81 /* Products */,
+				ECFF23A29A061BB0B85BD796 /* Pods */,
+				6AF82EF52D651089E96273EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		29C4D80825581733004F7F81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29C4D80725581733004F7F81 /* iOS-Eliq-Challenge.app */,
+				29C4D81D25581737004F7F81 /* iOS-Eliq-ChallengeTests.xctest */,
+				29C4D82825581737004F7F81 /* iOS-Eliq-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29C4D80925581733004F7F81 /* iOS-Eliq-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				29E3DF4B2558373700A16E7D /* Application */,
+				29E3DF4A2558373100A16E7D /* Presentation */,
+				29E3DF492558372B00A16E7D /* Shared */,
+				29E3DF482558371D00A16E7D /* Infrustructure */,
+				29E3DF472558370C00A16E7D /* Data */,
+				29E3DF462558370600A16E7D /* Domain */,
+				29E3DF45255836FD00A16E7D /* SupportingFiles */,
+			);
+			path = "iOS-Eliq-Challenge";
+			sourceTree = "<group>";
+		};
+		29C4D82025581737004F7F81 /* iOS-Eliq-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				29C4D82125581737004F7F81 /* AppConfigurationTests.swift */,
+				29C4D82325581737004F7F81 /* Info.plist */,
+				2901F51E255C574E002254AC /* NetworkTests.swift */,
+			);
+			path = "iOS-Eliq-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		29C4D82B25581737004F7F81 /* iOS-Eliq-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				29C4D82C25581737004F7F81 /* iOS_Eliq_ChallengeUITests.swift */,
+				29C4D82E25581737004F7F81 /* Info.plist */,
+			);
+			path = "iOS-Eliq-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		29E3DF45255836FD00A16E7D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				29C4D81325581736004F7F81 /* Assets.xcassets */,
+				29C4D81525581736004F7F81 /* LaunchScreen.storyboard */,
+				29C4D81825581736004F7F81 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		29E3DF462558370600A16E7D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				292061C82559A4E000BFCDCF /* Interfaces */,
+				292061C72559A4D800BFCDCF /* Usecases */,
+				292061C62559A4D100BFCDCF /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		29E3DF472558370C00A16E7D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2901F4F8255C526B002254AC /* Network */,
+				2901F4F2255C5007002254AC /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		29E3DF482558371D00A16E7D /* Infrustructure */ = {
+			isa = PBXGroup;
+			children = (
+				29E3DF572558385E00A16E7D /* Network */,
+			);
+			path = Infrustructure;
+			sourceTree = "<group>";
+		};
+		29E3DF492558372B00A16E7D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				2901F4E8255C4F24002254AC /* Cancellable.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		29E3DF4A2558373100A16E7D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				292061B32559969A00BFCDCF /* Utilities */,
+				29E3DF522558377600A16E7D /* MainScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		29E3DF4B2558373700A16E7D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2920618F25590CD700BFCDCF /* DIContainers */,
+				29C4D80A25581733004F7F81 /* AppDelegate.swift */,
+				29E3DF78255839C000A16E7D /* AppAppearance.swift */,
+				29E3DF7D25583A4F00A16E7D /* AppConfigurations.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		29E3DF522558377600A16E7D /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				292061AF2559967300BFCDCF /* Views */,
+				292061AE2559966700BFCDCF /* ViewModels */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		29E3DF572558385E00A16E7D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				29E3DF6F2558392000A16E7D /* Errors */,
+				29E3DF582558386B00A16E7D /* DataTransferService.swift */,
+				29E3DF602558389900A16E7D /* Endpoint.swift */,
+				29E3DF65255838B700A16E7D /* NetworkConfig.swift */,
+				29E3DF6A255838DA00A16E7D /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		29E3DF6F2558392000A16E7D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				29E3DF702558392D00A16E7D /* ConnectionError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		6AF82EF52D651089E96273EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB7E87D65476EF05F590CE7 /* Pods_iOS_Eliq_Challenge.framework */,
+				8A9A8E0D8B15BA4CA9CFAA31 /* Pods_iOS_Eliq_Challenge_iOS_Eliq_ChallengeUITests.framework */,
+				5EEF4533F58E9B8294B471D1 /* Pods_iOS_Eliq_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECFF23A29A061BB0B85BD796 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCD99ACEC86817A322CA81F2 /* Pods-iOS-Eliq-Challenge.debug.xcconfig */,
+				66CD9969D9303C50E1BDA4D7 /* Pods-iOS-Eliq-Challenge.release.xcconfig */,
+				B76116675A86122D91422464 /* Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.debug.xcconfig */,
+				AAE0106D29BB7BB2DF08828F /* Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.release.xcconfig */,
+				5BD08F0A01309F640ED9640C /* Pods-iOS-Eliq-ChallengeTests.debug.xcconfig */,
+				1AA2969FA2FAE9BD4F71C848 /* Pods-iOS-Eliq-ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29C4D80625581733004F7F81 /* iOS-Eliq-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C4D83125581737004F7F81 /* Build configuration list for PBXNativeTarget "iOS-Eliq-Challenge" */;
+			buildPhases = (
+				F197B23160CE0ECE172DF24E /* [CP] Check Pods Manifest.lock */,
+				29C4D80325581733004F7F81 /* Sources */,
+				29C4D80425581733004F7F81 /* Frameworks */,
+				29C4D80525581733004F7F81 /* Resources */,
+				BDBB21517B8FA0E7D878A750 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-Eliq-Challenge";
+			productName = "iOS-Eliq-Challenge";
+			productReference = 29C4D80725581733004F7F81 /* iOS-Eliq-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29C4D81C25581737004F7F81 /* iOS-Eliq-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C4D83425581737004F7F81 /* Build configuration list for PBXNativeTarget "iOS-Eliq-ChallengeTests" */;
+			buildPhases = (
+				033B794D5E5DF3A66D407973 /* [CP] Check Pods Manifest.lock */,
+				29C4D81925581737004F7F81 /* Sources */,
+				29C4D81A25581737004F7F81 /* Frameworks */,
+				29C4D81B25581737004F7F81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29C4D81F25581737004F7F81 /* PBXTargetDependency */,
+			);
+			name = "iOS-Eliq-ChallengeTests";
+			productName = "iOS-Eliq-ChallengeTests";
+			productReference = 29C4D81D25581737004F7F81 /* iOS-Eliq-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		29C4D82725581737004F7F81 /* iOS-Eliq-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29C4D83725581737004F7F81 /* Build configuration list for PBXNativeTarget "iOS-Eliq-ChallengeUITests" */;
+			buildPhases = (
+				E4E67BBE9CFC91C91A7CB787 /* [CP] Check Pods Manifest.lock */,
+				29C4D82425581737004F7F81 /* Sources */,
+				29C4D82525581737004F7F81 /* Frameworks */,
+				29C4D82625581737004F7F81 /* Resources */,
+				65A9102E90031404FC285EB2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29C4D82A25581737004F7F81 /* PBXTargetDependency */,
+			);
+			name = "iOS-Eliq-ChallengeUITests";
+			productName = "iOS-Eliq-ChallengeUITests";
+			productReference = 29C4D82825581737004F7F81 /* iOS-Eliq-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29C4D7FF25581733004F7F81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					29C4D80625581733004F7F81 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					29C4D81C25581737004F7F81 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 29C4D80625581733004F7F81;
+					};
+					29C4D82725581737004F7F81 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 29C4D80625581733004F7F81;
+					};
+				};
+			};
+			buildConfigurationList = 29C4D80225581733004F7F81 /* Build configuration list for PBXProject "iOS-Eliq-Challenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29C4D7FE25581733004F7F81;
+			productRefGroup = 29C4D80825581733004F7F81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29C4D80625581733004F7F81 /* iOS-Eliq-Challenge */,
+				29C4D81C25581737004F7F81 /* iOS-Eliq-ChallengeTests */,
+				29C4D82725581737004F7F81 /* iOS-Eliq-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29C4D80525581733004F7F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C4D81725581736004F7F81 /* LaunchScreen.storyboard in Resources */,
+				29C4D81425581736004F7F81 /* Assets.xcassets in Resources */,
+				29C4D81225581733004F7F81 /* MainViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C4D81B25581737004F7F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C4D82625581737004F7F81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		033B794D5E5DF3A66D407973 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Eliq-ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65A9102E90031404FC285EB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDBB21517B8FA0E7D878A750 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Eliq-Challenge/Pods-iOS-Eliq-Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Eliq-Challenge/Pods-iOS-Eliq-Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Eliq-Challenge/Pods-iOS-Eliq-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4E67BBE9CFC91C91A7CB787 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F197B23160CE0ECE172DF24E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Eliq-Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29C4D80325581733004F7F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2920619A2559150B00BFCDCF /* MainSceneDIContainer.swift in Sources */,
+				2901F4F4255C5020002254AC /* DefaultCurrencyListRepository.swift in Sources */,
+				29E3DF592558386B00A16E7D /* DataTransferService.swift in Sources */,
+				29E3DF66255838B700A16E7D /* NetworkConfig.swift in Sources */,
+				2920619125590CE900BFCDCF /* AppDIContainer.swift in Sources */,
+				29C4D80F25581733004F7F81 /* MainViewController.swift in Sources */,
+				29E3DF612558389900A16E7D /* Endpoint.swift in Sources */,
+				2901F4FA255C5278002254AC /* ApiEndpoints.swift in Sources */,
+				2901F4E9255C4F25002254AC /* Cancellable.swift in Sources */,
+				2901F4D4255C4AE5002254AC /* Currency.swift in Sources */,
+				2901F4EE255C4F71002254AC /* CurrencyListRepository.swift in Sources */,
+				29E3DF6B255838DA00A16E7D /* NetworkService.swift in Sources */,
+				29E3DF712558392D00A16E7D /* ConnectionError.swift in Sources */,
+				29C4D80B25581733004F7F81 /* AppDelegate.swift in Sources */,
+				2901F4CF255C45B7002254AC /* FetchCurrencyDataUseCase.swift in Sources */,
+				29E3DF7E25583A4F00A16E7D /* AppConfigurations.swift in Sources */,
+				29E3DF79255839C000A16E7D /* AppAppearance.swift in Sources */,
+				2901F505255C5435002254AC /* RepositoryTask.swift in Sources */,
+				2901F50E255C56A1002254AC /* CurrencyList+ex.swift in Sources */,
+				292061A72559966200BFCDCF /* MainViewModel.swift in Sources */,
+				2901F4D9255C4B2E002254AC /* CurrencyList.swift in Sources */,
+				292061B6255996AE00BFCDCF /* StoryboardInstantiable.swift in Sources */,
+				2901F524255C69C0002254AC /* Observable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C4D81925581737004F7F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2901F51F255C574E002254AC /* NetworkTests.swift in Sources */,
+				29C4D82225581737004F7F81 /* AppConfigurationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29C4D82425581737004F7F81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29C4D82D25581737004F7F81 /* iOS_Eliq_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29C4D81F25581737004F7F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C4D80625581733004F7F81 /* iOS-Eliq-Challenge */;
+			targetProxy = 29C4D81E25581737004F7F81 /* PBXContainerItemProxy */;
+		};
+		29C4D82A25581737004F7F81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 29C4D80625581733004F7F81 /* iOS-Eliq-Challenge */;
+			targetProxy = 29C4D82925581737004F7F81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		29C4D81025581733004F7F81 /* MainViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29C4D81125581733004F7F81 /* Base */,
+			);
+			name = MainViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		29C4D81525581736004F7F81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29C4D81625581736004F7F81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29C4D82F25581737004F7F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		29C4D83025581737004F7F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29C4D83225581737004F7F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCD99ACEC86817A322CA81F2 /* Pods-iOS-Eliq-Challenge.debug.xcconfig */;
+			buildSettings = {
+				API_ACCESS_KEY = a2cbec86f2b04844a2cad00f4de0a56e;
+				API_BASE_URL = "http://data.fixer.io/api/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Eliq-Challenge/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eliq.iOS-Eliq-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		29C4D83325581737004F7F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66CD9969D9303C50E1BDA4D7 /* Pods-iOS-Eliq-Challenge.release.xcconfig */;
+			buildSettings = {
+				API_ACCESS_KEY = a2cbec86f2b04844a2cad00f4de0a56e;
+				API_BASE_URL = "http://data.fixer.io/api/";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Eliq-Challenge/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eliq.iOS-Eliq-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		29C4D83525581737004F7F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BD08F0A01309F640ED9640C /* Pods-iOS-Eliq-ChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Eliq-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eliq.iOS-Eliq-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Eliq-Challenge.app/iOS-Eliq-Challenge";
+			};
+			name = Debug;
+		};
+		29C4D83625581737004F7F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA2969FA2FAE9BD4F71C848 /* Pods-iOS-Eliq-ChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Eliq-ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eliq.iOS-Eliq-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS-Eliq-Challenge.app/iOS-Eliq-Challenge";
+			};
+			name = Release;
+		};
+		29C4D83825581737004F7F81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76116675A86122D91422464 /* Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Eliq-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eliq.iOS-Eliq-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-Eliq-Challenge";
+			};
+			name = Debug;
+		};
+		29C4D83925581737004F7F81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAE0106D29BB7BB2DF08828F /* Pods-iOS-Eliq-Challenge-iOS-Eliq-ChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "iOS-Eliq-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eliq.iOS-Eliq-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "iOS-Eliq-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29C4D80225581733004F7F81 /* Build configuration list for PBXProject "iOS-Eliq-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C4D82F25581737004F7F81 /* Debug */,
+				29C4D83025581737004F7F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C4D83125581737004F7F81 /* Build configuration list for PBXNativeTarget "iOS-Eliq-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C4D83225581737004F7F81 /* Debug */,
+				29C4D83325581737004F7F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C4D83425581737004F7F81 /* Build configuration list for PBXNativeTarget "iOS-Eliq-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C4D83525581737004F7F81 /* Debug */,
+				29C4D83625581737004F7F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29C4D83725581737004F7F81 /* Build configuration list for PBXNativeTarget "iOS-Eliq-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29C4D83825581737004F7F81 /* Debug */,
+				29C4D83925581737004F7F81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29C4D7FF25581733004F7F81 /* Project object */;
+}
